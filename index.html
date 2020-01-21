@@ -2,36 +2,44 @@
 <html lang="zh-CN">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
     <title>萱萱和楠楠的恋爱计时器</title>
     <style>
+
         body {
-            -webkit-font-smoothing: antialiased;
-            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('bg2.jpg');
-            font-size: 85%;
-            margin: 0;
-            background-size:cover;
-            /*background-position: center 0;*/
-            background-repeat:no-repeat;
+          background-image: url("./bg2.jpg");
+          background-position: center 0;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          -webkit-background-size: cover;
+          -o-background-size: cover;
+          -moz-background-size: cover;
+          -ms-background-size: cover;
         }
-        
-        h2 {
+/*        h2 {
             font-size: 220%;
             font-weight: 400;
         }
-        
-        .content {
+        */
+/*        .content {
             position: absolute;
             width: 100%;
             top: 40%;
             transform: translate(0, -50%);
             text-align: center;
-        }
+        }*/
         
         .timer {
             font-size: 180%;
@@ -44,42 +52,89 @@
         }
 
 
-a:link{
+/*a:link{
 
 text-decoration:none;
 
 color:red;
 
 }
-
+*/
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <h2><font color="#FFFFFF">喜欢萱萱的楠楠 和 喜欢楠楠的萱萱</font></h2>
-        <h2><font color="#FFFFFF">已经在一起</font></h2>
-        <div class="timer">
-            <b id="d"></b> <font color="#FFFFFF">Days</font> <b id="h"></b> <font color="#FFFFFF">Hours</font> <b id="m"></b> <font color="#FFFFFF">Minutes </font> <b id="s"></b> <font color="#FFFFFF">Seconds </font>
-        </div>
-        <h2><font color="#FFFFFF">有美一人 清扬婉兮 邂逅相遇 适我愿兮</font></h2>
-        <h2><font color="#FFFFFF">失而复得的夏日 和你</font></h2>
-        <h2><font color="#FFFFFF">你就是我，最好的 <a href="./me.jpg">圣诞礼物</a></font></h1>
-<!--         <center>
-            
-            <table>
-            <tr >
-                <td style="width:30%" ><h2><font color="#FFFFFF">有美一人，清扬婉兮</font></h2></td>
-                <td ><h2><font color="#FFFFFF">失而复得的夏日</font></h2></td>
-            </tr>
-            <tr>
-                <td><h2><font color="#FFFFFF">邂逅相遇，适我愿兮</font></h2></td>
-                <td><h2><font color="#FFFFFF">和你</font></h2></td>
-            </tr>
-            </table>
+	<div class="container-fluid">
 
-        </center> -->
+		<div class="row justify-content-center" style="height: 100px">
+		    <div class="align-self-center">
+		        <h2><font color="#FFFFFF">喜欢萱萱的楠楠 和 喜欢楠楠的萱萱</font></h2>
+		    </div>
+		</div>
 
+		<div class="row justify-content-center">
+		    <div class="align-self-center">
+		        <h2><font color="#FFFFFF">已经在一起</font></h2>
+		    </div>
+		</div>
+
+		<div class="row justify-content-center">
+		    <div class="align-self-center">
+		        <div class="timer">
+        		    <b id="d"></b> <font color="#FFFFFF">Days</font> <b id="h"></b> <font color="#FFFFFF">Hours</font> <b id="m"></b> <font color="#FFFFFF">Minutes </font> <b id="s"></b> <font color="#FFFFFF">Seconds </font>
+        		</div>
+		    </div>
+		</div>		
+
+		<div class="row justify-content-center">
+		    <div class="align-self-center">
+		        <h2><font color="#FFFFFF">有美一人 清扬婉兮 邂逅相遇 适我愿兮</font></h2>
+		    </div>
+		</div>
+
+		<div class="row justify-content-center">
+		    <div class="align-self-center">
+		        <h2><font color="#FFFFFF">失而复得的夏日 和你</font></h2>
+			</div>
+			</div>
+
+
+		<div class="row">
+		    	<div class="col">
+		    		<p class="text-center"><font color="#FFFFFF">我们曾经一起走过山河大海</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">我们也会一起走过人山人海</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">万水千山，世间百态，我想与你一起看</font></p>
+		    	</div>
+		    	<div class="col">
+		    		<p class="text-center"><font color="#FFFFFF">是你让我的世界变成粉红色</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">阳光，花瓣</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">世界之美，尽在你的眼眸中</font></p>
+		    	</div>
+		    	<div class="col">
+		    		<p class="text-center"><font color="#FFFFFF">冬至要吃饺子，腊八要喝粥</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">生活的仪式感，有你才有了意义</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">人间烟火，便是幸福</font></p>
+		    	</div>
+		    	<div class="col">
+		    		<p class="text-center"><font color="#FFFFFF">火树银花，光怪陆离</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">有迷茫，有诱惑，有痛苦</font></p>
+		    		<p class="text-center"><font color="#FFFFFF">无论如何，有你，就好</font></p>		    		
+		    	</div>
+		</div>
+		<div class="row">
+		    	<div class="col">
+		    		<img class="img-fluid" src="./1.jpg" alt="Chania">
+		    	</div>
+		    	<div class="col">
+		    		<img class="img-fluid" src="./2.jpg" alt="Chania">
+		    	</div>
+		    	<div class="col">
+		    		<img class="img-fluid" src="./3.jpg" alt="Chania">
+		    	</div>
+		    	<div class="col">
+		    		<img class="img-fluid" src="./4.jpg" alt="Chania">
+		    	</div>
+		</div>
 
     </div>
 
@@ -114,3 +169,6 @@ color:red;
 </body>
 
 </html>
+
+
+
